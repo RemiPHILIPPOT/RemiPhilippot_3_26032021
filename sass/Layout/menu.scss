@@ -43,67 +43,31 @@
     &__title {
       font-family: "Shrikhand", "cursive";
     }
-  
+
     &__btn {
       height: 2rem;
-      width: 2rem;
-      background-color: transparent;
-      border: transparent 0px solid;
-      padding: 0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      cursor: pointer;
-      position: relative;
-      // background-color: black;
+            width: 2rem;
+            background-color: transparent;
+            border: transparent 0px solid;
+            padding: 0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+    }
+    
+    
+        
       
-      &:hover::before {
-        opacity: 1;
-      }
-      
-      &::before {
-        opacity: 0;
-        transition: 0.5s;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        color:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
-      }
-    }
-  
-    &__like {
-      transition-duration: .25s;
-      // background-color: #f6f6f6;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      // transition-duration: 0.7s;
-      // display: inline-block;
-      // opacity: 1;
-      // background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-      // background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color:transparent;
-      // font-weight: bold;
-//       // mix-blend-mode: lighten;
-    }
-  
-    &__btn:hover {
-      .menu__like {
-        &--noBg {
-          // opacity: 0;
-        }
-      }
-    }
+    
   }
+  
+    
+  
+    
+        
+      
+
+
   
 .submenus {
     display: grid;
@@ -151,6 +115,23 @@
     animation-fill-mode: both;
     transform: scale(0);
     max-width: 100%;
+    &:hover{
+      .menuItem__icon{
+        transform: rotate(180deg);
+      }
+    }
+    
+    &:hover {
+      padding-right: 75px;
+    }
+    &:hover .menuItem__icon {
+      opacity: 1;
+      transform: translate(-50px);
+      
+    }
+    &:hover .fa-check {
+      transform: rotate(360deg) ;
+    }
   
     &__header {
       white-space: nowrap;
@@ -171,6 +152,7 @@
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      
     }
   
     &__price {
@@ -188,9 +170,11 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      transition-duration: 0.9s;
+      transition-duration: 0.2s;
       transform: rotate(180deg);
+      transition: 0.8s;
       position: relative;
+      
       
       
       
@@ -211,17 +195,19 @@
       justify-content:center;
       border-radius: 100px;
       transform: rotate(180deg);
-      transition-duration: 0.5s;
-      &:hover{
-        transform: rotate(0);
+      transition-duration: 0.4s;
+      &:hover {
+        transform: rotate(180deg);
+        // transition: 1.5s;
+
       }
       
   
     }
   
-    // &:hover {&__wrapIcon {
-    //   transform: rotate(0);
-    // }}
+    &:hover {&__wrapIcon {
+      // transform: rotate(180deg);
+    }}
   
     &__icon {
       color: $color-tertiary;
