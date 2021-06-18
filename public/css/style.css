@@ -501,21 +501,27 @@ body {
   animation: fadein 1.2s 0.3s ease-out both, transform 0.3s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
-  transform: scale(0);
   max-width: 100%;
+  vertical-align: middle;
+  transition: all 500ms;
+  transform: scaleX(0);
+  transform-origin: 100% 60%;
 }
-.menuItem:hover .menuItem__icon {
-  transform: rotate(180deg);
+.menuItem__wrapIcon--span {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
 }
 .menuItem:hover {
   padding-right: 75px;
 }
-.menuItem:hover .menuItem__icon {
+.menuItem:hover__icon {
+  transform: rotate(180deg);
   opacity: 1;
   transform: translate(-50px);
 }
-.menuItem:hover .fa-check {
-  transform: rotate(360deg);
+.menuItem:hover .menuItem__wrapIcon--span {
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
 }
 .menuItem__header {
   white-space: nowrap;
