@@ -168,7 +168,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: #f3f3f3;
-  font-size: 1, 2rem;
   position: relative;
   padding: 15px;
   box-shadow: 0px 3px 3px #73737338 inset;
@@ -185,7 +184,7 @@ body {
   text-align: center;
 }
 .exploration__subtitle {
-  font-weight: 300px;
+  font-weight: 600;
 }
 .exploration__text {
   font-size: 1.25rem;
@@ -515,11 +514,6 @@ body {
 .menuItem:hover {
   padding-right: 75px;
 }
-.menuItem:hover__icon {
-  transform: rotate(180deg);
-  opacity: 1;
-  transform: translate(-50px);
-}
 .menuItem:hover .menuItem__wrapIcon--span {
   transform: rotate(-360deg);
   transition: transform 500ms ease-in-out;
@@ -560,9 +554,6 @@ body {
   transform: rotate(180deg);
   transition: 0.8s;
   position: relative;
-}
-.menuItem:hover__confirmation {
-  margin-right: -1rem;
 }
 .menuItem__wrapIcon {
   height: 1.6rem;

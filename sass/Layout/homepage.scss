@@ -1,11 +1,8 @@
-
-
 body{
     scroll-behavior: smooth;
 }
 
-.header{
-    
+.header{ 
     &__logo{
         text-align: center;
     }
@@ -15,14 +12,12 @@ body{
         display: flex;
         justify-content: center;
         background-color: rgb(243, 243, 243);
-        font-size: 1,2rem;
         position: relative;
         padding: 15px;
         box-shadow: 0px 3px 3px #73737338 inset;
         &__icon{
             margin-right: 15px;
         }
-    
 }   
 
 .exploration{
@@ -33,7 +28,7 @@ body{
         text-align: center;
     
         &__subtitle{
-            font-weight: 300px;
+            font-weight: 600;
         }
         &__text{
             font-size: 1.25rem;
@@ -164,7 +159,7 @@ position: relative;
 left: -0.75rem;
             }
             
-        }
+}
     
 
     
@@ -176,7 +171,7 @@ left: -0.75rem;
             margin: 25px;
         }
     
-    }
+}
 .card{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -193,7 +188,7 @@ left: -0.75rem;
         background: #f6f6f6;
       }
       
-    }
+}
     
 .card {
       background-color: white;
@@ -279,7 +274,7 @@ left: -0.75rem;
             
           }
         
-    }
+}
 
 // .menu__like--noBg{
 //         z-index: 1;
@@ -303,6 +298,7 @@ left: -0.75rem;
             margin: 35px;
             color: white;
             font-family: "Shrikhand", "cursive";
+            
         }
         &__link{
             text-decoration: none;
@@ -318,9 +314,6 @@ left: -0.75rem;
                 flex-direction: row;
                 justify-content: space-around;
                 
-
-            
-                
             }
         }
         &__icon{
@@ -330,15 +323,16 @@ left: -0.75rem;
             letter-spacing: 17px;
         }
         // &__container{
-            // @media screen and (min-width:1024px) {
-            //     display: flex;
-            //     flex-direction: row;
+        //     @media screen and (min-width:1024px) {
+        //         display: flex;
+        //         // flex-direction: row;
             
                 
-            // }
+        //     }
         // }
-    }
+    
 
     
     
     
+}
