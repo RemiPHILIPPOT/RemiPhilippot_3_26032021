@@ -178,7 +178,7 @@ left: -0.75rem;
         column-gap: 2rem;
         row-gap: 2rem;
         box-shadow: 1px 9px 32px -6px rgba(138,138,138,0.68);
-        padding: 25px;
+        // padding: 25px;
         margin: 30px;
     
       @media screen and (max-width:768px) {
@@ -210,9 +210,11 @@ left: -0.75rem;
             height: 250px;
             width: 100%;
             border: transparent solid 0px;
-            border-radius: 1rem 1rem 1rem 1rem;
+            border-radius: 1rem 1rem 0rem 0rem;
             box-shadow: none;
             object-fit: cover;
+            
+            
         }
         &__new {
             background-color: $color-tertiary;
